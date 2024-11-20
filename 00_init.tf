@@ -3,9 +3,12 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
-      region = "ap-northeast-2"
     }
   }
+}
+
+provider "aws" {
+  region = "ap-northeast-2"
 }
 
 # resource "aws_key_pair" "yjsim_key" {
